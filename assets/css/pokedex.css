@@ -6,14 +6,83 @@
     margin: 0;
 }
 
+.normal{
+   background-color: #818B91; 
+}
+.grass {
+    background-color: #63BC5A;
+}    
+    
+.fire {
+    background-color: #FF9D55;
+}            
+    
+.water {
+    background-color: #5090D6;
+}        
+    
+.electric {
+    background-color: #F4D23C;
+}        
+    
+.ice {
+    background-color: #73CEC0;
+}        
+    
+.ground{
+    background-color:  #D97845;
+}       
+    
+.flying{
+    background-color: #8FA9DE;
+}        
+    
+.poison{
+    background-color: #AA6BC8;
+}        
+    
+.fighting{
+    background-color: #CE416B;
+}         
+    
+.psychic{
+    background-color: #FA7179;
+}        
+    
+.dark {
+    background-color: #5A5465;
+}        
+    
+.rock {
+    background-color: #C5B78C;
+}
 
+.bug {
+    background-color: #91C12F;
+}        
+    
+.ghost {
+    background-color: #5269AD;
+}        
+    
+.steel {
+    background-color: #5A8EA2;
+}        
+    
+.dragon {
+    background-color: #0B6DC3;
+}        
+    
+.fairy {
+    background-color: #EC8FE6;
+}        
+    
 
 .pokemon {
     display: flex;
     flex-direction: column;
     margin: .5rem;
     padding: 2rem 1rem;
-    background-color: #49d0b0;
     border-radius: 1rem;
 }
 
@@ -25,6 +94,7 @@
 }
 
 .pokemon .name {
+    text-transform: capitalize;
     color: #fff;
     margin-bottom: .25rem;
 }
@@ -40,10 +110,11 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    filter: brightness(1.1);
+    text-align: center;
 }
 
 .pokemon .detail .types .type {
-    background-color: #61e1ca;
     color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
@@ -55,6 +126,25 @@
     max-width: 100%;
     height: 70px;
 
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: .625rem;
+    background-color: #6c79db;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
 }
 
 @media screen and (min-width: 380px) {
